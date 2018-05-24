@@ -2,7 +2,7 @@
 - 该框架用来生成动态库和头文件，规范化编写Makefile，可以扩展添加第三方依赖库和头文件，并包含测试用例。
 
 **2、测试**
-- 测试对外输出动态库和头文件分别为：libsoprint.so和soprint.h,测试用例目录为：example，测试情况如下步骤所示：
+- 对外输出动态库和头文件分别为：libsoprint.so和soprint.h，测试用例目录为：example，测试情况如下步骤所示：
     - \# cd xxx/libso
     - \# make
         - 先编译当前目录生成动态库，然后自动进入example目录编译测试用例
