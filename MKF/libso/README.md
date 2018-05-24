@@ -14,3 +14,6 @@
 
 **3、应用**
 - 根据业务需求，编辑对应c和h文件，修改Makefile目标和依赖对象名称，若是涉及到第三方库和头文件，可以在当前目录添加lib和include子目录，并同步修改Makefile相关配置参数，再对应调整example测试用例c和Makefile，参考第二步测试过程进行验证。
+
+**4、注意事项**
+- 注意区分编译（CFLAGS）和链接(LDCFALGS)的选项，头文件-I选项和动态库-fPIC选项都是属于编译阶段，动态库-L选项和动态库-shared选项都是链接阶段，顺便提下gcc编译的是个阶段：预处理（pre-processing）、编译(compiliing)、汇编(assembling)、链接(linking)。
